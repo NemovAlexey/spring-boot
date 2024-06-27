@@ -1,13 +1,13 @@
 package ru.kata.springboot.model;
 
+import jakarta.persistence.*;
 import lombok.*;
 
-import javax.persistence.*;
-
-@ToString
 @Getter
 @Setter
-@RequiredArgsConstructor
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 @Entity
 @Table(name = "users")
 public class User {

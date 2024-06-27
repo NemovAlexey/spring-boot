@@ -23,7 +23,7 @@
             <td th:text="${user.getLastName()}">
             <td th:text="${user.getEmail()}">
             <td>
-                <form th:action="@{/users/{id}/edit(id=${user.getId()})}">
+                <form th:action="@{/users/edit/{id}(id=${user.getId()})}">
                     <input type="submit" value="Edit">
                 </form>
             </td>
